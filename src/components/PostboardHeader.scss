@@ -1,0 +1,60 @@
+@import "../variables";
+.postboard-header {
+	background-color: $card-color;
+	box-shadow: $card-shadow;
+	border-radius: 2px;
+	padding: 1rem 3.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__logo {
+		font-size: 7.2rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	&__info {
+		text-align: right;
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1.2rem;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1.2rem;
+	}
+	&__btn {
+		background: none;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__icon {
+		font-size: 3.2rem;
+		color: $input-color;
+	}
+	&__name {
+		font-weight: 400;
+		font-size: 3.6rem;
+	}
+	&__secretcode {
+		font-weight: 400;
+		font-size: 3.6rem;
+
+		&-value {
+			margin-left: 1rem;
+			color: #fff;
+
+			&::before {
+				content: "#";
+			}
+		}
+	}
+}

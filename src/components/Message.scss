@@ -1,0 +1,42 @@
+@import "../variables";
+
+.message {
+	border-width: 0.3rem;
+	border-style: solid;
+	border-radius: 2px;
+	background-color: $component-color;
+	padding: 1.2rem;
+	display: grid;
+	grid-template-columns: repeat(2, max-content);
+	column-gap: 1.2rem;
+	&__text {
+		font-size: 2.4rem;
+	}
+	&__author {
+		font-size: 1.8rem;
+		grid-row: 2 / span 1;
+		grid-column: 2 / span 1;
+		&::before {
+			content: "- ";
+		}
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 0.4rem;
+	}
+	&__btn {
+		background: none;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__icon {
+		font-size: 2.4rem;
+		color: $input-color;
+		margin-bottom: 0.2rem;
+	}
+}

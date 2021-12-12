@@ -1,0 +1,36 @@
+@import "../variables";
+
+.join-postboard {
+	&__code-label {
+		display: block;
+		font-size: 3.6rem;
+		margin-bottom: 1.2rem;
+	}
+	&__code-input {
+		display: block;
+		background: none;
+		border: 0.3rem solid $input-color;
+		border-radius: 2px;
+		padding: 1rem 2rem;
+		font-size: 3.6rem;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4.8rem;
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: $component-color;
+		}
+	}
+	&__join-btn {
+		border: none;
+		cursor: pointer;
+		width: 30rem;
+		background-color: $component-color;
+		box-shadow: $component-shadow;
+		border-radius: 2px;
+		padding: 1rem 0;
+		font-size: 3.6rem;
+	}
+}

@@ -1,0 +1,70 @@
+@import "../variables";
+
+.new-message {
+	background-color: $card-color;
+	box-shadow: $card-shadow;
+	padding: 2.4rem;
+	border-radius: 2px;
+	&__label {
+		display: block;
+		font-size: 3.6rem;
+		margin-bottom: 1.2rem;
+	}
+	&__input {
+		resize: none;
+		background: none;
+		border: 0.3rem solid $input-color;
+		border-radius: 2px;
+		padding: 1.2rem 1.8rem;
+		font-size: 3.6rem;
+		width: 100%;
+		margin-bottom: 1.8rem;
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: $component-color;
+		}
+	}
+	&__controls {
+		display: grid;
+		grid-template-columns: 1fr max-content max-content;
+		gap: 2.4rem;
+	}
+	&__author {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&-label {
+			font-size: 3.6rem;
+			margin-right: 1.2rem;
+			flex-shrink: 0;
+		}
+		&-input {
+			background: none;
+			border: 0.3rem solid $input-color;
+			border-radius: 2px;
+			padding: 1rem 2rem;
+			font-size: 3.6rem;
+			text-align: right;
+			width: 100%;
+			&:focus {
+				outline: none;
+			}
+			&::placeholder {
+				color: $component-color;
+			}
+		}
+	}
+
+	&__post-btn {
+		border: none;
+		cursor: pointer;
+		width: 24rem;
+		background-color: $component-color;
+		box-shadow: $component-shadow;
+		border-radius: 2px;
+		padding: 1rem 0;
+		font-size: 3.6rem;
+	}
+}

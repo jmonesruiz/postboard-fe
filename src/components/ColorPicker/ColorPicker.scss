@@ -1,0 +1,19 @@
+.color-picker {
+	position: relative;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+
+	&__label {
+		float: left;
+		display: block;
+		font-size: 3.2rem;
+	}
+	&__options {
+		display: grid;
+		gap: 0.8rem;
+		grid-template-columns: repeat(4, min-content);
+	}
+}
